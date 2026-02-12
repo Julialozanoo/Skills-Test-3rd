@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+<script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+<title>Account Creation</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, pink, #af7894);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 80px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(255, 122, 122, 0.3);
+    width: 500px;
+}
+
+h2 {
+    text-align: center;
+    color: hotpink;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 193, 193);
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    background: #ff9393;
+    color: rgb(155, 84, 84);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #79bbc4;
+}
+
+#output {
+    margin-top: 10px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Create Account</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button py-click="verify_account">Sign Up</button>
+
+    <div id="output"></div>
+</div>
+
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
